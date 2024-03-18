@@ -3,6 +3,7 @@ package com.andres.springboot.di.app.springbootdi.controller;
 import com.andres.springboot.di.app.springbootdi.config.ApiPath;
 import com.andres.springboot.di.app.springbootdi.entities.Product;
 import com.andres.springboot.di.app.springbootdi.services.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +15,8 @@ import java.util.List;
 @RequestMapping(ApiPath.PRODUCT)
 public class ProductController {
 
-    private ProductService productService = new ProductService();
+    @Autowired
+    private ProductService productService;
 
     @GetMapping
     public List<Product> list() {

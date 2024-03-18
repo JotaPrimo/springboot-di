@@ -1,18 +1,18 @@
-package com.andres.springboot.di.app.springbootdi.infra.repositories;
+package com.andres.springboot.di.app.springbootdi.infra.implementation;
 
 import com.andres.springboot.di.app.springbootdi.core.entities.Product;
-import com.andres.springboot.di.app.springbootdi.infra.repositories.interfaces.IProductRepository;
+import com.andres.springboot.di.app.springbootdi.infra.interfaces.IProductRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.Arrays;
 import java.util.List;
 
 @Repository
-public class ProductRepositoryImpl implements IProductRepository {
+public class ProdutoRepositoryImpl implements IProductRepository {
 
     private List<Product> data;
 
-    public ProductRepositoryImpl() {
+    public ProdutoRepositoryImpl() {
         this.data = Arrays.asList(
                 new Product(1L, "Memoria corsair 32", 850L),
                 new Product(2L, "Monitor", 450L),

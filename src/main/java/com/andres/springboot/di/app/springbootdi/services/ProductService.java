@@ -1,11 +1,13 @@
 package com.andres.springboot.di.app.springbootdi.services;
 
 import com.andres.springboot.di.app.springbootdi.entities.Product;
-import com.andres.springboot.di.app.springbootdi.repositories.ProductRepository;
+import com.andres.springboot.di.app.springbootdi.infra.repositories.ProductRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class ProductService {
 
     // no service devo manipular os dados

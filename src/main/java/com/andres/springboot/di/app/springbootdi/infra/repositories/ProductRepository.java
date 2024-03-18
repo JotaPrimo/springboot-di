@@ -1,4 +1,4 @@
-package com.andres.springboot.di.app.springbootdi.repositories;
+package com.andres.springboot.di.app.springbootdi.infra.repositories;
 
 import com.andres.springboot.di.app.springbootdi.entities.Product;
 
